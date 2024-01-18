@@ -10,9 +10,40 @@
 </head>
 <body>
     <div class="container">
-    <header>
-    </header>
-    <nav>
+        <header>
+            <!--Meny-knapp för att öppna dropdown meny-->
+    
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon" id="menu-icon-bars">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+    
+            <!--dropdown meny och stäng-knappen -->
+    
+            <nav id="nav-menu">
+    
+                <!--Stängaknappen som visas när mdropmenyn är -->
+    
+                <button id="close-menu">
+                    <span class="menu-icon" id="menu-icon-cross">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="pictures.html">Bilder</a></li>
+                    <li><a href="process.html">Processen</a></li>
+                </ul>
+            </nav>
+    
+        </header>    
+        <nav class="nav_bigscreen">
         <ul>
             <li><a href="index.html">Startsida</a></li>
             <li><a href="pictures.html">Bilder</a></li>

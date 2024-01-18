@@ -70,3 +70,136 @@ p {
     padding: 5px 0 50px 0;
     text-align: center;
 }
+
+.menu-btn {
+    display: none;
+}
+
+#nav-menu {
+    display: none;
+}
+
+
+/*för mindre skärmar än 600px*/
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 150px;
+    }
+
+    /*navigering för stora skärmar dolda*/
+    .nav_bigscreen {
+        display: none;
+    }
+
+  /* Hamburgemeny eller dropdown meny  */
+#nav-menu {
+    background-color: rgb(51, 158, 153);
+    min-width: 300px;
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 10;
+    /* denna togglas mellan block och none för att visa och gömma menyn*/
+}
+
+#nav-menu ul {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+#nav-menu ul li {
+    padding: 5% 2%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+#nav-menu ul li a:hover {
+    background-color: rgb(42, 129, 125);
+    padding: 15px;
+}
+
+
+/*Meny-knappen för att öppna dropdown menyn*/
+#open-menu {
+    /*flexibel display för att öppna och stänga meny*/
+    display: flex;  
+    padding: 10px;
+    background-color: rgb(51, 158, 153);
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    box-shadow: none;
+    border: none;
+}
+
+#open-menu:hover {
+    background-color: rgb(42, 129, 125);
+}
+
+/*hamburgemenyn*/
+.bars {
+    width: 45px;
+    height: 5px;
+    border-radius: 10px;
+    display: block;
+    background-color: white;
+    margin: 7px 0;
+}
+
+.menu-text {
+    display: none;
+}
+
+/*stänga meny-knappen*/
+header #close-menu {
+    display: flex;
+    margin: 2% 2%;
+    padding: 15px 20px;
+    position: relative;
+    top: 45px;
+    right: -250px;
+    cursor: pointer;
+    background-color: rgb(51, 158, 153);
+    box-shadow: none;
+    border: none;
+    
+  
+}
+
+header #close-menu:hover {
+    background-color: rgb(42, 129, 125);
+}
+
+.cross1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+    width: 30px;
+    background-color: white;
+    padding: 2%;
+}
+
+.cross2 {
+    transform: rotate(135deg);
+    position: relative;
+    top: -6px;
+    width: 30px;
+    background-color: white;
+    padding: 2%;
+}
+
+}
