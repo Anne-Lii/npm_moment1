@@ -15,15 +15,12 @@ h1 {
 .container {
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
-
 
 header {
     height: 200px;
-    width: 100%;
- 
+    width: 100%; 
 }
 
 header img {
@@ -48,8 +45,7 @@ nav ul li {
     font-weight: 600;
     padding: 10px 2%; 
     float: left;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 nav ul li a {
@@ -57,13 +53,9 @@ nav ul li a {
     color: black;
 }
 
-nav ul li:hover {
-    
+nav ul li:hover {    
     color: rgb(187, 163, 57);
     text-decoration: underline;
-    
-
-    
 }
 
 img {
@@ -80,22 +72,27 @@ img {
     box-shadow: none;
 }
 
-p {
-    font-size: 20px;
-    padding: 5px 0 50px 0;
-    text-align: center;
-}
-
 #omuppgiften {
-    max-width: 800px;
+    width: 900px;
+    max-width: 90%;
     margin: auto;
-    
+    text-align: left;
+    line-height: 1.4em; 
+    font-size: 20px;
+    padding-bottom: 200px;   
 }
 
-#omuppgiften p {
+#text_processen {
+    width: 900px;
+    max-width: 90%;
+    margin: auto;
     text-align: left;
-    padding-left: 30px;
+    line-height: 1.4em; 
+    font-size: 20px;
+    padding-bottom: 200px;
 }
+
+
 
 /*döljer hamburgemenyn för mindre skärmar*/
 .menu-btn {

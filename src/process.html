@@ -52,6 +52,46 @@
         </ul>
     </nav>
     <main><h1>Processen</h1></main>
+    <p id="text_processen">
+        Jag börjar det hela med att kontrollera NodeJs som finns installerad på datorn sedan tidigare. Den används vid debugging i VSC (Visual Studi Code).
+        I kommandotolken skriver jag "node --version" och det ser bra ut. <br>
+        Jag har skapat en ny katalog som heter moment1 i min katalog som heter frontend. Katalogen moment1 öppnas i VSC och ett npm projekt startas i terminalen med att skriva "npm init". <br>
+        En package.json fil skapas då och där tas main och scripts bort. Inte glömma att spara innan man kör en "npm install parcel --save-dev" i terminalen för att undvika felmeddelanden. <br>
+        Nu lagras denna devDependencie till detta projekt i package.json filen. En node_modules katalog skapas med massor filer och den vill man inte versionshantera. Därför lägger jag den i en .gitignore fil som jag skapat. <br>
+        Denna installerar man nu lätt igen med att skriva "npm install" då den finns lagrad i vår devDependencie. <br> <br>
+        I package.json filen skapar jag en "source" : "src/index.html" för att visa vilken fil projektet ska startas i. <br>
+        Därefter skapar jag en ny katalog som jag döper till src där jag lägger alla mina css, html och js filer samt bilder mm tillhörande projektet. Parcel använder src katalogen som standard. <br>
+        Skapar även några genvägar i package.json filen med objectet "scripts" med "start" : "parcel" och "build" : "parcel build". 
+        För att starta projektet till en livereload sida kan jag nu skriva "npm run start" i terminalen och för att bygga ihop projektet och göra den klar för publicering skriver jag "npm run build".<br><br>
+
+        För bakåtkompabiliteten skriver jag i package.json filen in "browserslist" : "> 0.5%, last 2 versions, not dead" så att flera webbläsare kan läsa nyare kod. Här har 99,5 procent av alla webbläsare stöd för koden.<br>
+        Efter att ha kontrollerat att all länkning till css-filerna och js-filerna stämmer skriver jag in type = "module" i script taggen till js filen för att den ska kunna inkluderas i andra js-filer. <br><br>
+
+        Nu är det dags för testkörning. Så "npm run start" skrivs in i terminalen och genvägen vi skapade i package.json filen används. En liveserver startas och en länk kommer upp i terminalen för att få se hur sidan ser ut live. 
+        Det har nu skapats en .parcel-cache katalog och en dist katalog som både läggs till i .gitignore filen. Dessa behöver inte versionshanteras. 
+        Dist katalogen är där de omarbetade filerna hamnar och det är därifrån filerna tas för publicering.
+        <br><br>
+        Ett nytt git repo startas i terminalen med "git init" för att kunna starta versionshanteringen. Jag skriver "git branch -m main" för att ändra min master branch till en main branch. 
+        Jag går in på githubs sida för att starta ett remote repository och kopplar isamman mitt lokala repo till mitt remote repo med att i terminalen skriva "git remote add origin" och adressen till mitt remote repo. 
+        Nu är det kopplat och jag kan köra en "git add ." i terminalen för att lägga till mina filer i stagingarea och "git commit -m "" för att göra min första commit. Sedan "git push" för att pusha upp ändringarna till mitt remote repository.
+        <br><br>
+        Jag bygger min sida och gör regelbundna commits. På sidan bilder läggs 5 fotografier i jpeg format in. De fotografierna kommer automatiskt redigeras och komprimeras med hjälp av parcel. 
+        I html taggen picture skrivs det in direkt vilka ändringar som ska göras på fotografierna.
+        Efter länkningen till bilder skriver jag ?as=avif&quality=70&width=800" type="image/avif" för att göra om formatet till avif, dra ner kvaliteten , sätta en storlek och berätta för elementet att det är ett avif format. 
+        Har inte webbläsaren stöd för avif går den vidare till nästa source srcset som har samma inställningar fast för webp format. Tillsist ligger ett jpg format originalbild i en img tagg.  <br> <br>
+        Sidan byggs vidare med navigering för stora och små skärmar där en dropdown hamburgemeny används för de mindre skärmarna. 
+        När jag är nöjd kör jag en "npm run build" i terminalen för att publiceringsbilderna i dist ska skapas för publicering av sidan.
+
+
+
+        
+
+        
+
+
+
+
+    </p>
     <footer>
 
     </footer>
