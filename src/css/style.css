@@ -5,6 +5,7 @@
 
 body {
     width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -12,10 +13,17 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
 .container {
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto;    
+    margin: 0 auto;  
+    padding-bottom: 200px;  
 }
 
 header {
@@ -76,10 +84,17 @@ img {
     width: 900px;
     max-width: 90%;
     margin: auto;
-    text-align: left;
     line-height: 1.4em; 
     font-size: 20px;
-    padding-bottom: 200px;   
+   
+}
+
+#omuppgiften p {
+    text-align: left;
+}
+
+#omuppgiften ul {
+    padding-left: 20px;
 }
 
 #text_processen {
